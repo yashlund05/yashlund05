@@ -1,6 +1,6 @@
 hi there i am Yash
 a Second year student majoring in Artificial intelligence and Machine learning
-Student at Vishwakarma University
+
 Passionate about machine learning and deep learning models
 
 
