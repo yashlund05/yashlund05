@@ -1,7 +1,7 @@
 hi there i am Yash
 a Second year student majoring in Artificial intelligence and Machine learning
 
-Passionate about machine learning and deep learning models
+Passionate about machine learning, deep learning and reinforcement learning. Currently wprking on RAG models,Gen AI tools and Federated Learning.
 
 
 ## 🌐 Socials:
