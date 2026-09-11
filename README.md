@@ -1,11 +1,20 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&pause=1000&color=6E40C9&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Yash+%F0%9F%91%8B;AI+%26+ML+Engineer+in+the+Making;RAG+%7C+GenAI+%7C+Federated+Learning;Building+Intelligent+Systems" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=6E40C9&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Yash+%F0%9F%91%8B;AI+%26+ML+Engineer+in+the+Making;Research+%7C+Hackathons+%7C+GenAI;Building+Intelligent+Systems" alt="Typing SVG" />
 </h1>
 
 <p align="center">
-  <a href="mailto:yashlund05@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=yash-lund-566835338" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/Yashlund05"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="mailto:yashlund05@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+  <a href="https://www.linkedin.com/in/yash-lund-566835338/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  </a>
+  <a href="https://www.kaggle.com/yashlund" target="_blank">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/>
+  </a>
+  <a href="https://github.com/Yashlund05">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+  </a>
 </p>
 
 ---
@@ -16,10 +25,15 @@
 
 🔭 Currently working on:
 - **Retrieval-Augmented Generation (RAG)** pipelines for intelligent document Q&A
-- **Generative AI** tools and LLM-powered applications
+- **Generative AI** tools and LLM-powered applications  
 - **Federated Learning** for privacy-preserving distributed model training
 
-💡 Interests: Deep Learning · Reinforcement Learning · NLP · Computer Vision · MLOps
+🏆 Highlights:
+- 📄 **Published ML research** in collaboration on breast cancer forecasting (JAIR)
+- 🥇 Competed at **IIT Techkriti** (fintech track) — team project *Ari*
+- 🇮🇳 Built a full-stack AI solution for **Smart India Hackathon**
+
+💡 Interests: Deep Learning · NLP · Computer Vision · Reinforcement Learning · MLOps
 
 📌 Open to **internships**, **research collaborations**, and **ML engineering** roles
 
@@ -54,30 +68,62 @@
 ### ⚙️ MLOps & Experiment Tracking
 ![MLflow](https://img.shields.io/badge/MLflow-d9ead3?style=for-the-badge&logo=numpy&logoColor=blue)
 ![DVC](https://img.shields.io/badge/DVC-945DD6?style=for-the-badge&logo=dvc&logoColor=white)
-![Weights & Biases](https://img.shields.io/badge/Weights_&_Biases-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black)
+![Weights & Biases](https://img.shields.io/badge/W&B-FFBE00?style=for-the-badge&logo=weightsandbiases&logoColor=black)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 
 ### 🛠️ Dev Tools & Platforms
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Google Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=black)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)
 ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi&logoColor=white)
 
 ---
 
-## 🎯 What I'm Building & Learning
+## 🏗️ Featured Projects
+
+### 🔬 [Breast Cancer Incidence Forecasting — India](https://github.com/yashlund05/breast-cancer-incidence-forecasting-india)
+> **ML research published in collaboration with JAIR**  
+> Forecasting breast cancer trends using Indian PBCR data with ML models. Covers data preprocessing, time-series analysis, and model evaluation across multiple Indian registries.  
+> `Python` · `scikit-learn` · `pandas` · `Time-Series` · `Medical AI`
+
+---
+
+### 🌾 [KrishiDrishti — Smart India Hackathon](https://github.com/yashlund05/KrishiDrishti-SIH)
+> **Full-stack AI-powered solution for SIH**  
+> An intelligent agri-tech platform — combining ML predictions with a modern web frontend.  
+> `TypeScript` · `AI/ML` · `Full Stack`
+
+---
+
+### 📈 [Project Ari — IIT Techkriti Fintech Fest](https://github.com/yashlund05/project_ari)
+> **Entropy Vanguard group project — IIT Techkriti**  
+> A fintech-oriented ML solution built under competitive conditions, targeting market intelligence.  
+> `Jupyter Notebook` · `Python` · `FinML`
+
+---
+
+### 🤖 [Automata Simulator](https://github.com/yashlund05/Automata-Simulator)
+> **Computational theory meets code**  
+> Simulation of DFA/NFA/PDA automata — bridging theoretical CS and practical implementation.  
+> `Python` · `Theory of Computation`
+
+---
+
+## 🎯 Skill Proficiency
 
 ```text
-🔷 RAG Pipelines       ████████████░░░   Advanced
-🔷 LLM Fine-Tuning     ████████░░░░░░░   Intermediate
-🔷 Federated Learning  ███████░░░░░░░░   Intermediate
-🔷 Reinforcement Learn ██████░░░░░░░░░   Intermediate
-🔷 MLOps / Deployment  █████░░░░░░░░░░   Learning
-🔷 Computer Vision     ████████░░░░░░░   Intermediate
+🔷 RAG / LLM Pipelines     ████████████░░░   Advanced
+🔷 ML / Deep Learning       █████████████░░   Advanced
+🔷 Data Analysis            ████████████░░░   Advanced
+🔷 Federated Learning       ███████░░░░░░░░   Intermediate
+🔷 Reinforcement Learning   ██████░░░░░░░░░   Intermediate
+🔷 MLOps / Deployment       █████░░░░░░░░░░   Learning
+🔷 Computer Vision          ████████░░░░░░░   Intermediate
 ```
 
 ---
@@ -86,7 +132,7 @@
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Yashlund05&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yashlund05&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&layout=compact" height="165"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yashlund05&theme=tokyonight&hide_border=true&layout=compact" height="165"/>
 </p>
 
 <p align="center">
@@ -98,7 +144,7 @@
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Yashlund05&theme=tokyonight&no-frame=true&no-bg=false&margin-w=6&column=7"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=Yashlund05&theme=tokyonight&no-frame=true&margin-w=6&column=7"/>
 </p>
 
 ---
@@ -120,9 +166,9 @@
 ---
 
 <p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=Yashlund05&icon=6&color=6" />
+  <img src="https://visitcount.itsvg.in/api?id=Yashlund05&icon=6&color=6"/>
 </p>
 
 <p align="center">
-  <i>⭐ If you find my work interesting, give it a star and let's connect!</i>
+  <i>⭐ Star something you find useful — and let's connect if you want to collaborate!</i>
 </p>
