@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 46" width="1000" height="46" role="img" aria-label="Verified results from recent projects">
+<defs><clipPath id="tc"><rect width="1000" height="46" rx="10"/></clipPath>
+<linearGradient id="ef" x1="0" x2="1"><stop offset="0" stop-color="#0b1020"/><stop offset=".06" stop-color="#0b1020" stop-opacity="0"/><stop offset=".94" stop-color="#0b1020" stop-opacity="0"/><stop offset="1" stop-color="#0b1020"/></linearGradient></defs>
+<rect width="1000" height="46" rx="10" fill="#121a33" stroke="#26335f"/>
+<g clip-path="url(#tc)">
+<g font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" fill="#fbbf24" xml:space="preserve">
+<animateTransform attributeName="transform" type="translate" from="0 0" to="-4099 0" dur="74.5s" repeatCount="indefinite"/>
+<text x="0" y="28">Aegis: p90 forecast coverage 90.0% on 20 unseen Azure apps   //   Aegis: 38.8 kWh less than Cluster Autoscaler at 0% shortfall   //   NeuroOS student: 7 to 24% lower mean wait than MLFQ on heavy-tailed loads   //   Digital twin: detector F1 0.978 falls to about 0.1 past 5 s of staleness   //   Sonar: mAP@0.5 80.7%, 44.6 ms per frame on CPU   //   Network twin: root cause top-1 84.6% on single faults   //   Weather blend: 7.9% better rain RMSE, 6.2% better wind RMSE than naive   //   </text><text x="4099" y="28">Aegis: p90 forecast coverage 90.0% on 20 unseen Azure apps   //   Aegis: 38.8 kWh less than Cluster Autoscaler at 0% shortfall   //   NeuroOS student: 7 to 24% lower mean wait than MLFQ on heavy-tailed loads   //   Digital twin: detector F1 0.978 falls to about 0.1 past 5 s of staleness   //   Sonar: mAP@0.5 80.7%, 44.6 ms per frame on CPU   //   Network twin: root cause top-1 84.6% on single faults   //   Weather blend: 7.9% better rain RMSE, 6.2% better wind RMSE than naive   //   </text>
+</g>
+<rect width="1000" height="46" fill="url(#ef)"/></g></svg>

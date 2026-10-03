@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 410" width="1000" height="410" role="img" aria-label="Technology stack by layer">
+<rect width="1000" height="410" rx="16" fill="#0b1020" stroke="#26335f"/>
+<rect x="24" y="24" width="952" height="52" rx="10" fill="#7dd3fc" fill-opacity=".07" stroke="#7dd3fc" stroke-opacity=".45"/>
+<rect x="24" y="24" width="176" height="52" rx="10" fill="#7dd3fc" fill-opacity=".22"><animate attributeName="fill-opacity" values=".16;.34;.16" dur="5s" begin="0.0s" repeatCount="indefinite"/></rect>
+<text x="112" y="55.0" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#e6e9f5">GenAI and RAG</text>
+<text x="220" y="55.0" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5" fill="#e6e9f5" xml:space="preserve">LangChain  HuggingFace  FAISS  ChromaDB  Pinecone  Ollama  OpenAI API</text>
+<rect x="24" y="86" width="952" height="52" rx="10" fill="#a78bfa" fill-opacity=".07" stroke="#a78bfa" stroke-opacity=".45"/>
+<rect x="24" y="86" width="176" height="52" rx="10" fill="#a78bfa" fill-opacity=".22"><animate attributeName="fill-opacity" values=".16;.34;.16" dur="5s" begin="0.7s" repeatCount="indefinite"/></rect>
+<text x="112" y="117.0" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#e6e9f5">Learning</text>
+<text x="220" y="117.0" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5" fill="#e6e9f5" xml:space="preserve">PyTorch  TensorFlow/Keras  scikit-learn  LightGBM  XGBoost  SHAP  Federated Learning</text>
+<rect x="24" y="148" width="952" height="52" rx="10" fill="#fbbf24" fill-opacity=".07" stroke="#fbbf24" stroke-opacity=".45"/>
+<rect x="24" y="148" width="176" height="52" rx="10" fill="#fbbf24" fill-opacity=".22"><animate attributeName="fill-opacity" values=".16;.34;.16" dur="5s" begin="1.4s" repeatCount="indefinite"/></rect>
+<text x="112" y="179.0" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#e6e9f5">Optimization</text>
+<text x="220" y="179.0" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5" fill="#e6e9f5" xml:space="preserve">OR-Tools CP-SAT  RL policy distillation  quantile forecasting</text>
+<rect x="24" y="210" width="952" height="52" rx="10" fill="#fb7185" fill-opacity=".07" stroke="#fb7185" stroke-opacity=".45"/>
+<rect x="24" y="210" width="176" height="52" rx="10" fill="#fb7185" fill-opacity=".22"><animate attributeName="fill-opacity" values=".16;.34;.16" dur="5s" begin="2.0999999999999996s" repeatCount="indefinite"/></rect>
+<text x="112" y="241.0" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#e6e9f5">Systems</text>
+<text x="220" y="241.0" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5" fill="#e6e9f5" xml:space="preserve">C  Go  Linux sched_ext  eBPF  AVX2/NEON SIMD  TensorRT</text>
+<rect x="24" y="272" width="952" height="52" rx="10" fill="#34d399" fill-opacity=".07" stroke="#34d399" stroke-opacity=".45"/>
+<rect x="24" y="272" width="176" height="52" rx="10" fill="#34d399" fill-opacity=".22"><animate attributeName="fill-opacity" values=".16;.34;.16" dur="5s" begin="2.8s" repeatCount="indefinite"/></rect>
+<text x="112" y="303.0" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#e6e9f5">Platform</text>
+<text x="220" y="303.0" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5" fill="#e6e9f5" xml:space="preserve">Kubernetes  Docker  Prometheus  Kepler  Grafana  FastAPI  Redis  MLflow</text>
+<rect x="24" y="334" width="952" height="52" rx="10" fill="#f0abfc" fill-opacity=".07" stroke="#f0abfc" stroke-opacity=".45"/>
+<rect x="24" y="334" width="176" height="52" rx="10" fill="#f0abfc" fill-opacity=".22"><animate attributeName="fill-opacity" values=".16;.34;.16" dur="5s" begin="3.5s" repeatCount="indefinite"/></rect>
+<text x="112" y="365.0" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="18" font-weight="700" fill="#e6e9f5">Domain</text>
+<text x="220" y="365.0" font-family="'JetBrains Mono','Fira Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="13.5" fill="#e6e9f5" xml:space="preserve">OpenDSS  pandapower  Pecan Street  medical time-series  agri-tech</text>
+</svg>

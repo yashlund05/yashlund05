@@ -1,194 +1,182 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1000&color=6E40C9&center=true&vCenter=true&width=650&lines=Hey%2C+I'm+Yash+%F0%9F%91%8B;AI+%26+ML+Engineer+in+the+Making;Research+%7C+Hackathons+%7C+GenAI;Building+Intelligent+Systems" alt="Typing SVG" />
-</h1>
+<div align="center">
 
-<p align="center">
-  <a href="mailto:yashlund05@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://www.linkedin.com/in/yash-lund-566835338/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://www.kaggle.com/yashlund" target="_blank">
-    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white"/>
-  </a>
-  <a href="https://github.com/Yashlund05">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-</p>
+<img src="./assets/hero.svg" alt="Yash Lund, AI and systems researcher" width="100%"/>
 
----
+<br/>
 
-## 🧠 About Me
+<a href="#research"><b>Research</b></a> &nbsp;|&nbsp; <a href="#recent-builds"><b>Recent builds</b></a> &nbsp;|&nbsp; <a href="#stack"><b>Stack</b></a> &nbsp;|&nbsp; <a href="#contact"><b>Contact</b></a>
 
-🎓 **Third-year B.Tech student** majoring in **Artificial Intelligence & Machine Learning**
+<br/><br/>
 
-🔬 Active researcher across **systems AI**, **energy-aware ML**, and **digital twin architectures**
+<img src="./assets/terminal.svg" alt="Terminal: whoami, focus, research, activity" width="100%"/>
 
-💡 Interests: Deep Learning · Reinforcement Learning · NLP · MLOps · Systems AI · Federated Learning
+<br/><br/>
 
-📌 Open to **internships**, **research collaborations**, and **ML engineering** roles
+<img src="./assets/ticker.svg" alt="Verified results from recent projects" width="100%"/>
 
----
+</div>
 
-## 📄 Current Research (IEEE Papers in Progress)
+<br/>
 
-### ⚡ [Aegis — AI-Driven Energy-Aware Kubernetes Orchestration](https://github.com/yashlund05)
-> **Cloud Computing & AI · IEEE Semester Project**
+| Investigating | Building | Looking for |
+|:--|:--|:--|
+| What happens to an ML decision when its input is late, stale, or too expensive to compute. | A predictive Kubernetes autoscaler, a learned OS scheduler, and a digital-twin staleness study, plus four applied systems for hackathons and networks. | Research collaborators, ML-systems internships, and teams that ship. |
 
-A closed-loop predictive autoscaling system for Kubernetes that replaces reactive HPA with a continuous AI control loop. Integrates **LightGBM quantile forecasting** (p10/p50/p90), **OR-Tools CP-SAT joint optimization**, and a custom **Go-based scheduler plugin** — all coupled into a single decision engine running every 30–60 seconds.
+<div align="center"><img src="./assets/divider.svg" width="100%" alt=""/></div>
 
-Targets: 15–25% energy reduction · 20–35% fewer SLO violations · sub-50ms scheduling latency
+<a name="research"></a>
 
-`Python` · `Go` · `LightGBM` · `OR-Tools` · `Kubernetes` · `Prometheus` · `Kepler` · `Docker` · `FastAPI`
+## Research
 
----
+Three projects, one thread: **latency decides whether a learned decision is useful.** Aegis forecasts load before it arrives, NeuroOS-Lite tries to make the decision fast enough to live in the kernel, and the Digital Twin study measures what breaks when the data arrives late. Each repo says what is measured and what is still a target.
 
-### 🧬 [NeuroOS-Lite — Neural Preemption & Memory Partitioning for OS Kernels](https://github.com/yashlund05)
-> **Systems AI · IEEE Transactions / SOSP Target**
+<br/>
 
-An asymmetric learned OS subsystem engine solving the **ML-in-kernel overhead paradox**. Heavy RL policy training runs off-path on a local GPU; the distilled policy executes inside the kernel dispatch path in **< 45 ns** using quantized fixed-point SIMD arithmetic — zero floating-point, zero GPU communication on the fast path.
+<a href="https://github.com/yashlund05/aegis-cloud"><img src="./assets/aegis.svg" alt="Aegis: quantile forecasting and CP-SAT scheduling for Kubernetes" width="100%"/></a>
 
-Achieves: 28.4% reduction in mean turnaround time · 41.2% reduction in p99 wait time · 38.9% less memory fragmentation
+<details>
+<summary><b>How Aegis works, and what the evaluation shows</b></summary>
 
-`C` · `Python` · `PyTorch` · `TensorRT` · `Linux sched_ext` · `eBPF` · `AVX2/NEON SIMD` · `OR-Tools`
+<br/>
 
----
+Kubernetes' HPA reacts to lagging averages, so scaling arrives after load has moved. Aegis forecasts first, optimizes second, and acts third, on a 30 to 60 second loop.
 
-### 🔌 [Digital Twin Power Grid — Synchronization Staleness Study](https://github.com/yashlund05)
-> **Energy Systems AI · IEEE Research Specification V2**
-
-A controlled empirical study of how **Digital Twin synchronization staleness** degrades short-term load estimation and unsupervised anomaly detection in a distribution-feeder DT. Uses the **IEEE 33-bus** benchmark with OpenDSS/pandapower, real Pecan Street load profiles, and synthetic fault injection — treating staleness as an experimentally controlled variable rather than an implementation detail.
-
-Models: LSTM · LSTM Autoencoder · Isolation Forest · XGBoost  
-`Python` · `OpenDSS` · `pandapower` · `PyTorch` · `scikit-learn` · `SHAP`
-
----
-
-## 🏗️ Past Projects
-
-### 🔬 [Breast Cancer Incidence Forecasting — India](https://github.com/yashlund05/breast-cancer-incidence-forecasting-india)
-> **Published ML research (JAIR collaboration)**  
-> ML-based forecasting of breast cancer trends across Indian PBCRs with time-series modelling and multi-registry evaluation.  
-> `Python` · `scikit-learn` · `pandas` · `Medical AI`
-
-### 🌾 [KrishiDrishti — Smart India Hackathon](https://github.com/yashlund05/KrishiDrishti-SIH)
-> **Full-stack AI platform for SIH**  
-> Agri-tech solution combining ML predictions with a modern TypeScript frontend.  
-> `TypeScript` · `AI/ML` · `Full Stack`
-
-### 📈 [Project Ari — IIT Techkriti Fintech Fest](https://github.com/yashlund05/project_ari)
-> **Entropy Vanguard · IIT Techkriti competition**  
-> Fintech-oriented ML solution for market intelligence, built under competitive conditions.  
-> `Jupyter Notebook` · `Python` · `FinML`
-
-### 🤖 [Automata Simulator](https://github.com/yashlund05/Automata-Simulator)
-> DFA/NFA/PDA simulation — bridging theoretical CS and practical implementation.  
-> `Python` · `Theory of Computation`
-
----
-
-## 🚀 Tech Stack
-
-### 🤖 AI / ML / Deep Learning
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=PyTorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=TensorFlow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=Keras&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-
-### 📊 Data & Analytics
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-ffffff?style=for-the-badge&logo=Matplotlib&logoColor=black)
-![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
-
-### 🗄️ Vector DBs & RAG Ecosystem
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=for-the-badge&logo=meta&logoColor=white)
-![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6B35?style=for-the-badge&logo=databricks&logoColor=white)
-![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=for-the-badge&logo=pinecone&logoColor=white)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white)
-
-### ⚙️ MLOps, Systems & Infrastructure
-![MLflow](https://img.shields.io/badge/MLflow-d9ead3?style=for-the-badge&logo=numpy&logoColor=blue)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-
-### 🛠️ Dev Tools & Platforms
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![GitHub](https://img.shields.io/badge/GitHub-121011?style=for-the-badge&logo=github&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi&logoColor=white)
-
----
-
-## 🎯 Skill Proficiency
-
-```text
-🔷 ML / Deep Learning          █████████████░░   Advanced
-🔷 Systems AI & MLOps          ████████████░░░   Advanced
-🔷 RAG / LLM Pipelines         ████████████░░░   Advanced
-🔷 Federated Learning          ███████░░░░░░░░   Intermediate
-🔷 Reinforcement Learning      ██████░░░░░░░░░   Intermediate
-🔷 Energy-Aware / Green AI     ████████░░░░░░░   Intermediate
-🔷 Digital Twin Systems        ███████░░░░░░░░   Intermediate
+```mermaid
+flowchart LR
+  T["Prometheus + Kepler<br/>telemetry"] --> R[("Redis<br/>feature store")]
+  R --> F["LightGBM<br/>quantile forecast p10 / p50 / p90"]
+  F --> C["Conformal<br/>calibration"]
+  C --> O["OR-Tools CP-SAT<br/>joint decision"]
+  O --> A["Autoscaler, Go scheduler,<br/>node power control"]
+  A --> K[("Kubernetes")]
+  K -. "30 to 60 s" .-> T
 ```
 
----
+**Evaluation design.** 24,274 Azure Functions apps were filtered to 411 eligible, then 60 sampled with a fixed seed and split strictly by application: 30 train, 10 calibrate, 20 test. The test apps were never seen in training or calibration.
 
-## 📊 GitHub Stats
+**Calibration.** Raw LightGBM p90 under-covers (86.8% median). Rolling conformal and adaptive conformal inference bring it to 90.0% and 89.9%.
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Yashlund05&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yashlund05&theme=tokyonight&hide_border=true&layout=compact" height="165"/>
-</p>
+**Energy at matched shortfall** (paired difference vs Cluster Autoscaler, 720 simulation runs, 10,000-sample bootstrap):
 
-<p align="center">
-  <img src="https://nirzak-streak-stats.vercel.app/?user=Yashlund05&theme=tokyonight&hide_border=true"/>
-</p>
+| Shortfall target | Calibration | Energy difference [95% CI] | Apps cheaper |
+|:--|:--|--:|--:|
+| 0.0% | Scale-aware | -16.7 kWh [-33.0, -2.7] | 70% |
+| 0.0% | Rolling | -38.8 kWh [-62.4, -16.6] | 85% |
+| 0.0% | ACI | -56.3 kWh [-80.7, -33.6] | 90% |
 
----
+**Limits, stated in the repo.** Results come from trace-driven simulation with a Kepler-validated power model. Remaining shortfall concentrates on high-peak apps during step-function bursts (Spearman 0.87).
 
-## 🏆 GitHub Trophies
+`Python` `Go` `LightGBM` `OR-Tools` `Kubernetes` `Prometheus` `Kepler` `Redis` `TimescaleDB` `Docker` `FastAPI`
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Yashlund05&theme=tokyonight&no-frame=true&margin-w=6&column=7"/>
-</p>
+</details>
 
----
+<br/>
 
-## 🔝 Top Contributed Repos
+<a href="https://github.com/yashlund05/os-subsystem"><img src="./assets/neuroos.svg" alt="NeuroOS-Lite: learned preemption for the OS dispatch path" width="100%"/></a>
 
-<p align="center">
-  <img src="https://github-contributor-stats.vercel.app/api?username=Yashlund05&limit=5&theme=tokyonight&combine_all_yearly_contributions=true"/>
-</p>
+<details>
+<summary><b>The overhead paradox, the split, and the honest numbers</b></summary>
 
----
+<br/>
 
-### ✍️ Dev Quote of the Day
+A learned scheduler only pays off if running the model costs less than the decisions it improves. Deep models take tens of microseconds, while a context switch takes about 1 to 2. NeuroOS-Lite splits the problem:
 
-<p align="center">
-  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
-</p>
+1. **Off the fast path:** behavior cloning plus PPO trains on a local GPU, then the policy is distilled to an int8 16 to 8 to 1 integer MLP.
+2. **On the fast path:** the integer policy runs in the dispatch path with a guardrail that falls back to classical heuristics when queues saturate or predictions drift.
 
----
+**Simulator results** (30 seeds, mean wait in microseconds, lower is better):
 
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=Yashlund05&icon=6&color=6"/>
-</p>
+| Workload | MLFQ | Learned student | Change |
+|:--|--:|--:|--:|
+| Pareto, load 0.5 | 927.2 | 702.8 | -24.2% |
+| Pareto, load 0.8 | 1333.1 | 1238.8 | -7.1% |
+| Pareto, load 0.95 | 1731.7 | 1512.2 | -12.7% |
+| Poisson, load 0.8 | 992.8 | 1059.1 | +6.7% |
+| Multi-burst | 3797.0 | 6900.5 | +81.7% |
 
-<p align="center">
-  <i>⭐ Star something you find useful — and let's connect if you want to collaborate!</i>
-</p>
+The student beats the realizable classical baselines on heavy-tailed loads, stays close to MLFQ on Poisson loads, and **fails on multi-burst workloads**, which the repo tracks as an out-of-distribution case. SRTF stays ahead, but it needs remaining-time knowledge a real kernel does not have.
+
+**Not yet measured:** the 45 ns in-kernel inference figure is a design target. The rdtsc benchmark harness is written, and the hardware number is pending.
+
+`C` `Python` `PyTorch` `PPO` `Linux sched_ext` `eBPF` `int8 quantization` `OR-Tools`
+
+</details>
+
+<br/>
+
+<a href="https://github.com/yashlund05/digital-twins-ieee"><img src="./assets/twin.svg" alt="Digital twin staleness study" width="100%"/></a>
+
+<details>
+<summary><b>Staleness as an experimental variable</b></summary>
+
+<br/>
+
+Most digital-twin work treats synchronization delay as an implementation detail. This study makes it the **independent variable** on the IEEE 33-bus feeder, and measures short-term load estimation and unsupervised anomaly detection under the same conditions. It sweeps 24 conditions: staleness from 0 to 300 s crossed with packet loss up to 20%.
+
+The anomaly detector shows a cliff, not a slope. With a fresh twin, the residual LSTM Autoencoder reaches F1 0.978 against 0.539 for the raw-signal baseline. Once staleness passes about 5 s it drops to roughly 0.1, below the raw baseline.
+
+<img src="https://raw.githubusercontent.com/yashlund05/digital-twins-ieee/main/experiments/runs/E12_PUBLICATION_ARTIFACTS_20261002/figures/fig_03_anomaly_staleness.png" alt="F1 versus synchronization staleness for LSTM Autoencoder and Isolation Forest" width="100%"/>
+
+The pre-registered hypothesis H3 (anomaly detection degrades more steeply than load estimation) was **not supported** in the 5-seed analysis, and the repo reports it that way.
+
+`Python` `OpenDSS` `PyTorch` `scikit-learn` `XGBoost` `SHAP`
+
+</details>
+
+<div align="center"><img src="./assets/divider.svg" width="100%" alt=""/></div>
+
+<a name="recent-builds"></a>
+
+## Recent builds
+
+| Project | Problem | Evidence | Built with |
+|:--|:--|:--|:--|
+| [**Enterprise Network Digital Twin**](https://github.com/yashlund05/enterprise-network-digital-twin-model) | Alarm floods and unclear blast radius in multi-tier networks. | 22 nodes, 44 links, 6 services, 15 fault scenarios. Root cause ranked first in 84.6% of single faults. 167 tests. | Python, graph algorithms |
+| [**Forecast Blend**](https://github.com/yashlund05/forecast-blend-SIH) (SIH, MoES / NCMRWF) | Blending 3 physical weather models and 2 AI models with regime-aware weights. | 7.9% lower rain RMSE and 6.2% lower wind RMSE than a naive average. ECMWF IFS still wins on temperature, and the repo says so. 43 tests. | Python, SQLite, Streamlit |
+| [**MarineDebris Sonar AI**](https://github.com/yashlund05/MarineDebris-Sonar-AI) (SIH 2026) | Finding debris in sonar imagery where cameras fail. | YOLOv8m, mAP@0.5 of 80.7% on 37 held-out frames, 44.6 ms per frame on CPU. 65 backend tests. | FastAPI, React, TypeScript, PyTorch |
+| [**Voice Calculator**](https://github.com/yashlund05/business-voice-calculator) | Offline running total from spoken numbers, 0 to 2000. | Vosk with a constrained number grammar, 29 ms mean latency. On a 61-prompt phone benchmark, 91.8% of prompts end correct or safely rejected. | Python, Vosk, Windows |
+
+### Earlier work
+
+| Project | What it is |
+|:--|:--|
+| [Breast Cancer Incidence Forecasting](https://github.com/yashlund05/breast-cancer-incidence-forecasting-india) | Code and data for a JAIR paper on ML forecasting of breast cancer trends across Indian cancer registries. |
+| [KrishiDrishti](https://github.com/yashlund05/KrishiDrishti-SIH) | Smart India Hackathon entry, ML predictions behind a TypeScript front end for agriculture. |
+| [Project Ari](https://github.com/yashlund05/project_ari) | Fintech market-intelligence build for IIT Techkriti, with the Entropy Vanguard team. |
+| [Automata Simulator](https://github.com/yashlund05/Automata-Simulator) | DFA, NFA and PDA simulation. |
+
+<div align="center"><img src="./assets/divider.svg" width="100%" alt=""/></div>
+
+<a name="stack"></a>
+
+## Stack
+
+<div align="center"><img src="./assets/stack.svg" alt="Technology stack grouped by layer" width="100%"/></div>
+
+<br/>
+
+## Activity
+
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yashlund05/yashlund05/output/snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yashlund05/yashlund05/output/snake.svg"/>
+  <img alt="Contribution graph eaten by a snake" src="https://raw.githubusercontent.com/yashlund05/yashlund05/output/snake-dark.svg" width="100%"/>
+</picture>
+</div>
+
+<div align="center"><img src="./assets/divider.svg" width="100%" alt=""/></div>
+
+<a name="contact"></a>
+
+## Contact
+
+If you work on schedulers, autoscaling, energy-aware ML, or grid and network analytics, and want a collaborator who enjoys measuring things properly, write to me.
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/email-yashlund05@gmail.com-fb7185?style=flat-square&labelColor=0b1020)](mailto:yashlund05@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/linkedin-yash--lund-7dd3fc?style=flat-square&labelColor=0b1020)](https://www.linkedin.com/in/yash-lund-566835338/)
+[![Kaggle](https://img.shields.io/badge/kaggle-yashlund-fbbf24?style=flat-square&labelColor=0b1020)](https://www.kaggle.com/yashlund)
+
+</div>
