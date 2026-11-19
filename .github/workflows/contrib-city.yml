@@ -1,0 +1,102 @@
+name: Generate Contribution City & Snake
+
+on:
+  schedule:
+    - cron: "30 18 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/contrib-city.yml"
+      - "README.md"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contrib-city
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Write Mission Control 3D Contrib Config
+        run: |
+          cat <<'EOF' > /tmp/profile-3d-settings.json
+          [
+            {
+              "type": "normal",
+              "fileName": "contrib-city-dark.svg",
+              "backgroundColor": "#05060A",
+              "foregroundColor": "#E6F4FF",
+              "strongColor": "#00F0FF",
+              "weakColor": "#7F95B3",
+              "radarColor": "#FF2E97",
+              "growingAnimation": true,
+              "contribColors": [
+                "#0E1320",
+                "#0A4A63",
+                "#00A8C6",
+                "#00F0FF",
+                "#B6FF00"
+              ]
+            },
+            {
+              "type": "normal",
+              "fileName": "contrib-city-light.svg",
+              "backgroundColor": "#F4F7FB",
+              "foregroundColor": "#05060A",
+              "strongColor": "#007B8A",
+              "weakColor": "#42526B",
+              "radarColor": "#C9186F",
+              "growingAnimation": true,
+              "contribColors": [
+                "#E2E8F0",
+                "#99E8F2",
+                "#00B8D4",
+                "#007B8A",
+                "#557E00"
+              ]
+            }
+          ]
+          EOF
+
+      - name: Generate 3D Isometric Contribution Skyline
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: /tmp/profile-3d-settings.json
+
+      - name: Move 3D Skyline SVGs to assets
+        run: |
+          mkdir -p assets
+          cp profile-3d-contrib/contrib-city-dark.svg assets/contrib-city-dark.svg
+          cp profile-3d-contrib/contrib-city-light.svg assets/contrib-city-light.svg
+          rm -rf profile-3d-contrib
+
+      - name: Generate Contribution Snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          outputs: |
+            assets/snake-dark.svg?palette=github-dark&color_snake=#FF2E97&color_dots=#0E1320,#0A4A63,#00A8C6,#00F0FF,#B6FF00
+            assets/snake-light.svg?palette=github-light&color_snake=#C9186F&color_dots=#E2E8F0,#99E8F2,#00B8D4,#007B8A,#557E00
+
+      - name: Commit generated SVGs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contrib-city-dark.svg assets/contrib-city-light.svg assets/snake-dark.svg assets/snake-light.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "telemetry: update contribution city and snake [skip ci]"
+            git pull --rebase origin main
+            git push
+          fi

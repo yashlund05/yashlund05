@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" width="560" height="260" role="img" aria-label="MARINEDEBRIS SONAR AI mission card">
+  <defs>
+    <clipPath id="clip-sonar-light">
+      <rect x="348" y="54" width="194" height="148" rx="6"/>
+    </clipPath>
+  </defs>
+  <rect width="560" height="260" fill="#F4F7FB" rx="8"/>
+  <path d="M20,6 L540,6 L554,20 L554,240 L540,254 L20,254 L6,240 L6,20 Z" fill="#FFFFFF" stroke="#B7CAE3" stroke-width="1.3"/>
+  <path d="M6,22 L6,6 L22,6" fill="none" stroke="#4D7300" stroke-width="2" stroke-linecap="square"/>
+    <path d="M538,6 L554,6 L554,22" fill="none" stroke="#4D7300" stroke-width="2" stroke-linecap="square"/>
+    <path d="M554,238 L554,254 L538,254" fill="none" stroke="#4D7300" stroke-width="2" stroke-linecap="square"/>
+    <path d="M22,254 L6,254 L6,238" fill="none" stroke="#4D7300" stroke-width="2" stroke-linecap="square"/>
+
+  <!-- Top Mission Bar -->
+  <rect x="20" y="16" width="520" height="26" rx="4" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1"/>
+  <circle cx="34" cy="29" r="4" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="46" y="33" fill="#4D7300" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1.2">MSN-06 // TELEMETRY</text>
+  <rect x="382" y="20" width="150" height="18" rx="3" fill="#F4F7FB" stroke="#4D7300" stroke-width="1" opacity="0.9"/>
+  <text x="457" y="32.5" text-anchor="middle" fill="#4D7300" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" font-weight="700" letter-spacing="0.8">SHIPPED</text>
+
+  <!-- Left Info Column (x=24..334) -->
+  <text x="24" y="76" fill="#05060A" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="16" font-weight="800" letter-spacing="0.4">MARINEDEBRIS SONAR AI</text>
+  <line x1="24" y1="88" x2="332" y2="88" stroke="#4D7300" stroke-width="1.5" opacity="0.65"/>
+  <text x="24" y="114" fill="#05060A" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="12.5">Real-time underwater debris detection in</text>
+  <text x="24" y="133" fill="#05060A" font-family="'Space Grotesk','Segoe UI',system-ui,-apple-system,sans-serif" font-size="12.5">sonar imagery via YOLOv8m + React (SIH 2026).</text>
+  <rect x="24" y="154" width="308" height="24" rx="4" fill="#F4F7FB" stroke="#D4DFEE" stroke-width="1"/>
+  <text x="34" y="170" fill="#42526B" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" letter-spacing="0.6">DOMAIN: ACOUSTIC VISION // FASTAPI + TS</text>
+  <line x1="24" y1="194" x2="332" y2="194" stroke="#D4DFEE" stroke-width="1"/>
+
+  <!-- Right Kinetic Telemetry Panel -->
+  <rect x="348" y="54" width="194" height="148" rx="6" fill="#F4F7FB" stroke="#B7CAE3" stroke-width="1.1"/>
+  <g clip-path="url(#clip-sonar-light)">
+    
+      <text x="358" y="70" fill="#4D7300" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9.5" font-weight="700">ACOUSTIC SONAR SWEEP</text>
+      <circle cx="444" cy="134" r="46" fill="none" stroke="#B7CAE3" stroke-width="1"/>
+      <circle cx="444" cy="134" r="30" fill="none" stroke="#B7CAE3" stroke-width="1" stroke-dasharray="3 3"/>
+      <circle cx="444" cy="134" r="14" fill="none" stroke="#007B8A" stroke-width="1"/>
+      <line x1="396" y1="134" x2="492" y2="134" stroke="#D4DFEE" stroke-width="1"/>
+      <line x1="444" y1="86" x2="444" y2="182" stroke="#D4DFEE" stroke-width="1"/>
+      <g>
+        <path d="M444,134 L444,88 A46,46 0 0,1 482,110 Z" fill="#B6FF00" opacity="0.32"/>
+        <line x1="444" y1="134" x2="444" y2="88" stroke="#B6FF00" stroke-width="2"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 444 134" to="360 444 134" dur="3.0s" repeatCount="indefinite"/>
+      </g>
+      <!-- Target Lock Box -->
+      <rect x="462" y="106" width="16" height="14" fill="none" stroke="#FF2E97" stroke-width="1.4">
+        <animate attributeName="opacity" values="0.25;1;0.25" dur="1.5s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="470" cy="113" r="2.5" fill="#FF2E97"/>
+      <circle cx="420" cy="150" r="2.5" fill="#00C4D9">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.1s" repeatCount="indefinite"/>
+      </circle>
+  </g>
+
+  <!-- Bottom Tech Tag Chips -->
+  <g transform="translate(24, 216)">
+        <rect width="66" height="22" rx="4" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1"/>
+        <text x="33" y="14.5" text-anchor="middle" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10">PyTorch</text>
+      </g>
+  <g transform="translate(97, 216)">
+        <rect width="59" height="22" rx="4" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1"/>
+        <text x="29.5" y="14.5" text-anchor="middle" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10">YOLOv8</text>
+      </g>
+  <g transform="translate(163, 216)">
+        <rect width="66" height="22" rx="4" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1"/>
+        <text x="33" y="14.5" text-anchor="middle" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10">FastAPI</text>
+      </g>
+  <g transform="translate(236, 216)">
+        <rect width="52" height="22" rx="4" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1"/>
+        <text x="26" y="14.5" text-anchor="middle" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10">React</text>
+      </g>
+  <g transform="translate(295, 216)">
+        <rect width="32" height="22" rx="4" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1"/>
+        <text x="16" y="14.5" text-anchor="middle" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10">TS</text>
+      </g>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 155" width="185" height="155" role="img" aria-label="04 // TKG-LLM orbiting mission planet">
+  <defs>
+    <radialGradient id="pg-light-tkg" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#00C4D9" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#007B8A" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#EAF1FA" stop-opacity="0.98"/>
+    </radialGradient>
+  </defs>
+  <rect width="185" height="155" fill="#F4F7FB" rx="6"/>
+  <path d="M16,4 L169,4 L181,16 L181,139 L169,151 L16,151 L4,139 L4,16 Z" fill="#FFFFFF" stroke="#B7CAE3" stroke-width="1.2"/>
+  <path d="M4,16 L4,4 L16,4" fill="none" stroke="#007B8A" stroke-width="1.8" stroke-linecap="square"/>
+    <path d="M169,4 L181,4 L181,16" fill="none" stroke="#007B8A" stroke-width="1.8" stroke-linecap="square"/>
+    <path d="M181,139 L181,151 L169,151" fill="none" stroke="#007B8A" stroke-width="1.8" stroke-linecap="square"/>
+    <path d="M16,151 L4,151 L4,139" fill="none" stroke="#007B8A" stroke-width="1.8" stroke-linecap="square"/>
+  <circle cx="18" cy="18" r="3" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="168" y="21" text-anchor="end" fill="#42526B" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9">ORB-04</text>
+  <g>
+    
+      <circle cx="92.5" cy="68" r="34" fill="none" stroke="#B7CAE3" stroke-width="1.1" stroke-dasharray="4 4"/>
+      <polygon points="92.5,46 112,68 92.5,90 73,68" fill="url(#pg-light-tkg)" stroke="#007B8A" stroke-width="1.6"/>
+      <g>
+        <circle cx="126.5" cy="68" r="4" fill="#B6FF00"/>
+        <circle cx="58.5" cy="68" r="3.5" fill="#FF2E97"/>
+        <circle cx="92.5" cy="34" r="3.5" fill="#00C4D9"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 92.5 68" to="360 92.5 68" dur="8.5s" repeatCount="indefinite"/>
+      </g>
+    <animateTransform attributeName="transform" type="translate" values="0 -2;0 2;0 -2" dur="4s" repeatCount="indefinite"/>
+  </g>
+  <line x1="18" y1="112" x2="167" y2="112" stroke="#D4DFEE" stroke-width="1"/>
+  <text x="92.5" y="128" text-anchor="middle" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">04 // TKG-LLM</text>
+  <text x="92.5" y="143" text-anchor="middle" fill="#007B8A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" letter-spacing="1">TEMPORAL KG</text>
+</svg>

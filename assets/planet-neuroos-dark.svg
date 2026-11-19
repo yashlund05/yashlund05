@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 185 155" width="185" height="155" role="img" aria-label="02 // NEURO-OS orbiting mission planet">
+  <defs>
+    <radialGradient id="pg-dark-neuroos" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FF2E97" stop-opacity="0.95"/>
+      <stop offset="55%" stop-color="#FF2E97" stop-opacity="0.72"/>
+      <stop offset="100%" stop-color="#0F1626" stop-opacity="0.98"/>
+    </radialGradient>
+  </defs>
+  <rect width="185" height="155" fill="#05060A" rx="6"/>
+  <path d="M16,4 L169,4 L181,16 L181,139 L169,151 L16,151 L4,139 L4,16 Z" fill="#0B0F19" stroke="#1E3252" stroke-width="1.2"/>
+  <path d="M4,16 L4,4 L16,4" fill="none" stroke="#FF2E97" stroke-width="1.8" stroke-linecap="square"/>
+    <path d="M169,4 L181,4 L181,16" fill="none" stroke="#FF2E97" stroke-width="1.8" stroke-linecap="square"/>
+    <path d="M181,139 L181,151 L169,151" fill="none" stroke="#FF2E97" stroke-width="1.8" stroke-linecap="square"/>
+    <path d="M16,151 L4,151 L4,139" fill="none" stroke="#FF2E97" stroke-width="1.8" stroke-linecap="square"/>
+  <circle cx="18" cy="18" r="3" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="168" y="21" text-anchor="end" fill="#7F95B3" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9">ORB-02</text>
+  <g>
+    
+      <circle cx="92.5" cy="68" r="36" fill="none" stroke="#162238" stroke-width="1" stroke-dasharray="3 4"/>
+      <circle cx="92.5" cy="68" r="23" fill="url(#pg-dark-neuroos)" stroke="#FF2E97" stroke-width="1.6"/>
+      <circle cx="92.5" cy="68" r="14" fill="none" stroke="#00F0FF" stroke-width="1.2" opacity="0.8">
+        <animate attributeName="r" values="10;22;10" dur="2.8s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.9;0.15;0.9" dur="2.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="92.5" cy="68" r="5" fill="#B6FF00"/>
+      <g>
+        <circle cx="92.5" cy="32" r="4" fill="#00F0FF"/>
+        <animateTransform attributeName="transform" type="rotate" from="0 92.5 68" to="360 92.5 68" dur="4.5s" repeatCount="indefinite"/>
+      </g>
+    <animateTransform attributeName="transform" type="translate" values="0 -2;0 2;0 -2" dur="4s" repeatCount="indefinite"/>
+  </g>
+  <line x1="18" y1="112" x2="167" y2="112" stroke="#162238" stroke-width="1"/>
+  <text x="92.5" y="128" text-anchor="middle" fill="#E6F4FF" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">02 // NEURO-OS</text>
+  <text x="92.5" y="143" text-anchor="middle" fill="#FF2E97" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" letter-spacing="1">KERNEL SCHED</text>
+</svg>
