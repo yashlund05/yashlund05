@@ -11,8 +11,6 @@
     <path d="M1172,8 L1192,8 L1192,28" fill="none" stroke="#007B8A" stroke-width="2" stroke-linecap="square"/>
     <path d="M1192,267 L1192,287 L1172,287" fill="none" stroke="#007B8A" stroke-width="2" stroke-linecap="square"/>
     <path d="M28,287 L8,287 L8,267" fill="none" stroke="#007B8A" stroke-width="2" stroke-linecap="square"/>
-
-  <!-- Terminal Header Bar -->
   <rect x="22" y="18" width="1156" height="32" rx="4" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1"/>
   <circle cx="40" cy="34" r="4.5" fill="#FF2E97"/>
   <circle cx="56" cy="34" r="4.5" fill="#00C4D9"/>
@@ -22,22 +20,16 @@
     <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
   </circle>
   <text x="1162" y="38" text-anchor="end" fill="#4D7300" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1">LIVE TELEMETRY</text>
-
-  <!-- Left Column: Pilot Telemetry -->
   <rect x="22" y="62" width="546" height="172" rx="6" fill="#F4F7FB" stroke="#B7CAE3" stroke-width="1.1"/>
   <text x="38" y="84" fill="#007B8A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1.4">$ cat /proc/mission/operator.conf</text>
   <line x1="38" y1="94" x2="550" y2="94" stroke="#D4DFEE" stroke-width="1"/>
-
   <g font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12">
     <text x="38" y="118" fill="#42526B">ROLE   :</text>
     <text x="112" y="118" fill="#05060A" font-weight="700">AI &amp; Systems Researcher</text>
-
     <text x="38" y="146" fill="#42526B">FOCUS  :</text>
     <text x="112" y="146" fill="#05060A">ML under latency, staleness &amp; compute budgets</text>
-
     <text x="38" y="174" fill="#42526B">TRACKS :</text>
     <text x="112" y="174" fill="#007B8A">Predictive K8s · Linux sched_ext · IEEE Twins</text>
-
     <text x="38" y="202" fill="#42526B">ORIGIN :</text>
     <text x="112" y="202" fill="#05060A">India (IST, UTC+05:30) // Channels Open</text>
   </g>
@@ -45,116 +37,112 @@
   <rect x="38" y="216" width="110" height="4" rx="2" fill="#007B8A">
     <animate attributeName="x" values="38;440;38" dur="6s" repeatCount="indefinite"/>
   </rect>
-
-  <!-- Right Column: Animated Loaded Modules -->
   <text x="588" y="70" fill="#C9186F" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" font-weight="700" letter-spacing="1.3">LOADED KERNEL &amp; ML MODULES [09 ACTIVE]</text>
-  <g transform="translate(588, 78)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#007B8A"/>
-        <g transform="translate(12, 12)">
-          <path d="M6,2 L14,2 L14,8 L6,8 Z M2,6 L10,6 L10,14 L2,14 Z" fill="none" stroke="#007B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">PYTHON</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="0.00s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    <g transform="translate(782, 78)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#C9186F"/>
-        <g transform="translate(12, 12)">
-          <path d="M12,3 A6,6 0 1,0 12,13 M4,8 L14,8" fill="none" stroke="#C9186F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">C / eBPF</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="0.35s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    <g transform="translate(976, 78)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#007B8A"/>
-        <g transform="translate(12, 12)">
-          <path d="M2,6 L14,6 M4,10 L13,10 M9,3 L14,8 L9,13" fill="none" stroke="#007B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">GO</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="0.70s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    <g transform="translate(588, 128)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#C9186F"/>
-        <g transform="translate(12, 12)">
-          <path d="M8,2 C11,5 13,7 13,10 A5,5 0 1,1 3,10 C3,8 4,6 6,5" fill="none" stroke="#C9186F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">PYTORCH</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="1.05s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    <g transform="translate(782, 128)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#007B8A"/>
-        <g transform="translate(12, 12)">
-          <path d="M8,2 L13.5,5.5 L12,12.5 L4,12.5 L2.5,5.5 Z" fill="none" stroke="#007B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">KUBERNETES</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="1.40s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    <g transform="translate(976, 128)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#4D7300"/>
-        <g transform="translate(12, 12)">
-          <path d="M3,13 L7,8 L10,10 L14,3 M11,3 L14,3 L14,6" fill="none" stroke="#4D7300" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">LIGHTGBM</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="1.75s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    <g transform="translate(588, 178)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#4D7300"/>
-        <g transform="translate(12, 12)">
-          <path d="M3,4 L13,4 L8,13 Z M5,9 L11,9" fill="none" stroke="#4D7300" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">OR-TOOLS</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="2.10s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    <g transform="translate(782, 178)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#007B8A"/>
-        <g transform="translate(12, 12)">
-          <path d="M9,2 L4,9 L8,9 L7,14 L12,7 L8,7 Z" fill="none" stroke="#007B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">OPENDSS</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="2.45s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-    <g transform="translate(976, 178)">
-        <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#C9186F"/>
-        <g transform="translate(12, 12)">
-          <path d="M2,3 L14,3 L14,13 L2,13 Z M5,7 L9,7 M7,7 L7,11" fill="none" stroke="#C9186F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">TYPESCRIPT</text>
-        <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="2.80s" repeatCount="indefinite"/>
-        </circle>
-      </g>
-
-  <!-- Bottom Live Status Strip -->
+<g transform="translate(588, 78)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#007B8A"/>
+  <g transform="translate(12, 12)">
+    <path d="M6,2 L14,2 L14,8 L6,8 Z M2,6 L10,6 L10,14 L2,14 Z" fill="none" stroke="#007B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">PYTHON</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="0.00s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(782, 78)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#C9186F"/>
+  <g transform="translate(12, 12)">
+    <path d="M12,3 A6,6 0 1,0 12,13 M4,8 L14,8" fill="none" stroke="#C9186F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">C / eBPF</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="0.35s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(976, 78)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#007B8A"/>
+  <g transform="translate(12, 12)">
+    <path d="M2,6 L14,6 M4,10 L13,10 M9,3 L14,8 L9,13" fill="none" stroke="#007B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">GO</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="0.70s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(588, 128)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#C9186F"/>
+  <g transform="translate(12, 12)">
+    <path d="M8,2 C11,5 13,7 13,10 A5,5 0 1,1 3,10 C3,8 4,6 6,5" fill="none" stroke="#C9186F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">PYTORCH</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="1.05s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(782, 128)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#007B8A"/>
+  <g transform="translate(12, 12)">
+    <path d="M8,2 L13.5,5.5 L12,12.5 L4,12.5 L2.5,5.5 Z" fill="none" stroke="#007B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">KUBERNETES</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="1.40s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(976, 128)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#4D7300"/>
+  <g transform="translate(12, 12)">
+    <path d="M3,13 L7,8 L10,10 L14,3 M11,3 L14,3 L14,6" fill="none" stroke="#4D7300" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">LIGHTGBM</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="1.75s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(588, 178)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#4D7300"/>
+  <g transform="translate(12, 12)">
+    <path d="M3,4 L13,4 L8,13 Z M5,9 L11,9" fill="none" stroke="#4D7300" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">OR-TOOLS</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="2.10s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(782, 178)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#007B8A"/>
+  <g transform="translate(12, 12)">
+    <path d="M9,2 L4,9 L8,9 L7,14 L12,7 L8,7 Z" fill="none" stroke="#007B8A" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">OPENDSS</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="2.45s" repeatCount="indefinite"/>
+  </circle>
+</g>
+<g transform="translate(976, 178)">
+  <rect width="182" height="40" rx="5" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1.1"/>
+  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="#C9186F"/>
+  <g transform="translate(12, 12)">
+    <path d="M2,3 L14,3 L14,13 L2,13 Z M5,7 L9,7 M7,7 L7,11" fill="none" stroke="#C9186F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="36" y="24" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">TYPESCRIPT</text>
+  <circle cx="166" cy="20" r="3.5" fill="#B6FF00">
+    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="2.80s" repeatCount="indefinite"/>
+  </circle>
+</g>
   <rect x="22" y="244" width="1156" height="32" rx="4" fill="#EAF1FA" stroke="#B7CAE3" stroke-width="1"/>
   <text x="38" y="264" fill="#4D7300" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700">LAST_COMMIT:</text>
   <text x="134" y="264" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5">2026-11-17 17:13 UTC (digital-twins-ieee)</text>
   <text x="588" y="264" fill="#42526B" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5">|</text>
   <text x="608" y="264" fill="#007B8A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5" font-weight="700">LOCAL_TIME:</text>
-  <text x="698" y="264" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5">2026-11-20 03:05 IST</text>
+  <text x="698" y="264" fill="#05060A" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5">2026-11-20 03:25 IST</text>
   <text x="916" y="264" fill="#42526B" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11.5">|</text>
   <text x="936" y="264" fill="#42526B" font-family="'JetBrains Mono','Fira Code','Cascadia Code',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11">SYNC: 6H ACTION</text>
   <rect x="1152" y="253" width="8" height="14" fill="#B6FF00">
