@@ -126,78 +126,75 @@ jobs:
                 const y = 78 + row * 50;
                 const c = t[m.col];
                 const delay = (idx * 0.35).toFixed(2);
-                return `<g transform="translate(${x}, ${y})">
-        <rect width="182" height="40" rx="5" fill="${t.panel2}" stroke="${t.border}" stroke-width="1.1"/>
-        <rect x="0" y="6" width="3" height="28" rx="1.5" fill="${c}"/>
-        <g transform="translate(12, 12)">
-          <path d="${m.icon}" fill="none" stroke="${c}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </g>
-        <text x="36" y="24" fill="${t.text}" font-family="${MONO}" font-size="11.5" font-weight="700" letter-spacing="0.8">${esc(m.name)}</text>
-        <circle cx="166" cy="20" r="3.5" fill="${t.acidBright}">
-          <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="${delay}s" repeatCount="indefinite"/>
-        </circle>
-      </g>`;
+                return [
+                  `<g transform="translate(${x}, ${y})">`,
+                  `  <rect width="182" height="40" rx="5" fill="${t.panel2}" stroke="${t.border}" stroke-width="1.1"/>`,
+                  `  <rect x="0" y="6" width="3" height="28" rx="1.5" fill="${c}"/>`,
+                  `  <g transform="translate(12, 12)">`,
+                  `    <path d="${m.icon}" fill="none" stroke="${c}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>`,
+                  `  </g>`,
+                  `  <text x="36" y="24" fill="${t.text}" font-family="${MONO}" font-size="11.5" font-weight="700" letter-spacing="0.8">${esc(m.name)}</text>`,
+                  `  <circle cx="166" cy="20" r="3.5" fill="${t.acidBright}">`,
+                  `    <animate attributeName="opacity" values="1;0.25;1" dur="2.1s" begin="${delay}s" repeatCount="indefinite"/>`,
+                  `  </circle>`,
+                  `</g>`,
+                ].join('\n');
               })
-              .join('\n    ');
+              .join('\n');
 
-            return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 295" width="1200" height="295" role="img" aria-label="System Status HUD for yashlund05">
-  <defs>
-    <pattern id="ssGrid-${t.mode}" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="${t.grid}" stroke-width="0.7"/>
-    </pattern>
-  </defs>
-  <rect width="1200" height="295" fill="${t.bg}" rx="8"/>
-  <path d="${frameD}" fill="${t.panel}" stroke="${t.border}" stroke-width="1.4"/>
-  <path d="${frameD}" fill="url(#ssGrid-${t.mode})" opacity="0.5"/>
-  ${cornerBrackets(8, 8, 1184, 279, 20, t.cyan, 2)}
-
-  <rect x="22" y="18" width="1156" height="32" rx="4" fill="${t.panel2}" stroke="${t.border}" stroke-width="1"/>
-  <circle cx="40" cy="34" r="4.5" fill="${t.magentaBright}"/>
-  <circle cx="56" cy="34" r="4.5" fill="${t.cyanBright}"/>
-  <circle cx="72" cy="34" r="4.5" fill="${t.acidBright}"/>
-  <text x="92" y="38" fill="${t.text}" font-family="${MONO}" font-size="12" font-weight="700" letter-spacing="1.2">TERMINAL://SYSTEM_STATUS // YASHLUND05</text>
-  <circle cx="1076" cy="34" r="4" fill="${t.acidBright}">
-    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>
-  </circle>
-  <text x="1162" y="38" text-anchor="end" fill="${t.acid}" font-family="${MONO}" font-size="11" font-weight="700" letter-spacing="1">LIVE TELEMETRY</text>
-
-  <rect x="22" y="62" width="546" height="172" rx="6" fill="${t.bg}" stroke="${t.border}" stroke-width="1.1"/>
-  <text x="38" y="84" fill="${t.cyan}" font-family="${MONO}" font-size="11" font-weight="700" letter-spacing="1.4">$ cat /proc/mission/operator.conf</text>
-  <line x1="38" y1="94" x2="550" y2="94" stroke="${t.grid}" stroke-width="1"/>
-
-  <g font-family="${MONO}" font-size="12">
-    <text x="38" y="118" fill="${t.muted}">ROLE   :</text>
-    <text x="112" y="118" fill="${t.text}" font-weight="700">AI &amp; Systems Researcher</text>
-
-    <text x="38" y="146" fill="${t.muted}">FOCUS  :</text>
-    <text x="112" y="146" fill="${t.text}">ML under latency, staleness &amp; compute budgets</text>
-
-    <text x="38" y="174" fill="${t.muted}">TRACKS :</text>
-    <text x="112" y="174" fill="${t.cyan}">Predictive K8s · Linux sched_ext · IEEE Twins</text>
-
-    <text x="38" y="202" fill="${t.muted}">ORIGIN :</text>
-    <text x="112" y="202" fill="${t.text}">India (IST, UTC+05:30) // Channels Open</text>
-  </g>
-  <rect x="38" y="216" width="512" height="4" rx="2" fill="${t.grid}"/>
-  <rect x="38" y="216" width="110" height="4" rx="2" fill="${t.cyan}">
-    <animate attributeName="x" values="38;440;38" dur="6s" repeatCount="indefinite"/>
-  </rect>
-
-  <text x="588" y="70" fill="${t.magenta}" font-family="${MONO}" font-size="11" font-weight="700" letter-spacing="1.3">LOADED KERNEL &amp; ML MODULES [09 ACTIVE]</text>
-  ${chips}
-
-  <rect x="22" y="244" width="1156" height="32" rx="4" fill="${t.panel2}" stroke="${t.border}" stroke-width="1"/>
-  <text x="38" y="264" fill="${t.acid}" font-family="${MONO}" font-size="11.5" font-weight="700">LAST_COMMIT:</text>
-  <text x="134" y="264" fill="${t.text}" font-family="${MONO}" font-size="11.5">${esc(meta.lastCommit)}</text>
-  <text x="588" y="264" fill="${t.muted}" font-family="${MONO}" font-size="11.5">|</text>
-  <text x="608" y="264" fill="${t.cyan}" font-family="${MONO}" font-size="11.5" font-weight="700">LOCAL_TIME:</text>
-  <text x="698" y="264" fill="${t.text}" font-family="${MONO}" font-size="11.5">${esc(meta.localTime)}</text>
-  <text x="916" y="264" fill="${t.muted}" font-family="${MONO}" font-size="11.5">|</text>
-  <text x="936" y="264" fill="${t.muted}" font-family="${MONO}" font-size="11">SYNC: 6H ACTION</text>
-  <rect x="1152" y="253" width="8" height="14" fill="${t.acidBright}">
-    <animate attributeName="opacity" values="1;0;1" dur="0.95s" repeatCount="indefinite"/>
-  </rect>
-</svg>\n`;
+            return [
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 295" width="1200" height="295" role="img" aria-label="System Status HUD for yashlund05">`,
+              `  <defs>`,
+              `    <pattern id="ssGrid-${t.mode}" width="32" height="32" patternUnits="userSpaceOnUse">`,
+              `      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="${t.grid}" stroke-width="0.7"/>`,
+              `    </pattern>`,
+              `  </defs>`,
+              `  <rect width="1200" height="295" fill="${t.bg}" rx="8"/>`,
+              `  <path d="${frameD}" fill="${t.panel}" stroke="${t.border}" stroke-width="1.4"/>`,
+              `  <path d="${frameD}" fill="url(#ssGrid-${t.mode})" opacity="0.5"/>`,
+              `  ${cornerBrackets(8, 8, 1184, 279, 20, t.cyan, 2)}`,
+              `  <rect x="22" y="18" width="1156" height="32" rx="4" fill="${t.panel2}" stroke="${t.border}" stroke-width="1"/>`,
+              `  <circle cx="40" cy="34" r="4.5" fill="${t.magentaBright}"/>`,
+              `  <circle cx="56" cy="34" r="4.5" fill="${t.cyanBright}"/>`,
+              `  <circle cx="72" cy="34" r="4.5" fill="${t.acidBright}"/>`,
+              `  <text x="92" y="38" fill="${t.text}" font-family="${MONO}" font-size="12" font-weight="700" letter-spacing="1.2">TERMINAL://SYSTEM_STATUS // YASHLUND05</text>`,
+              `  <circle cx="1076" cy="34" r="4" fill="${t.acidBright}">`,
+              `    <animate attributeName="opacity" values="1;0.2;1" dur="1.2s" repeatCount="indefinite"/>`,
+              `  </circle>`,
+              `  <text x="1162" y="38" text-anchor="end" fill="${t.acid}" font-family="${MONO}" font-size="11" font-weight="700" letter-spacing="1">LIVE TELEMETRY</text>`,
+              `  <rect x="22" y="62" width="546" height="172" rx="6" fill="${t.bg}" stroke="${t.border}" stroke-width="1.1"/>`,
+              `  <text x="38" y="84" fill="${t.cyan}" font-family="${MONO}" font-size="11" font-weight="700" letter-spacing="1.4">$ cat /proc/mission/operator.conf</text>`,
+              `  <line x1="38" y1="94" x2="550" y2="94" stroke="${t.grid}" stroke-width="1"/>`,
+              `  <g font-family="${MONO}" font-size="12">`,
+              `    <text x="38" y="118" fill="${t.muted}">ROLE   :</text>`,
+              `    <text x="112" y="118" fill="${t.text}" font-weight="700">AI &amp; Systems Researcher</text>`,
+              `    <text x="38" y="146" fill="${t.muted}">FOCUS  :</text>`,
+              `    <text x="112" y="146" fill="${t.text}">ML under latency, staleness &amp; compute budgets</text>`,
+              `    <text x="38" y="174" fill="${t.muted}">TRACKS :</text>`,
+              `    <text x="112" y="174" fill="${t.cyan}">Predictive K8s · Linux sched_ext · IEEE Twins</text>`,
+              `    <text x="38" y="202" fill="${t.muted}">ORIGIN :</text>`,
+              `    <text x="112" y="202" fill="${t.text}">India (IST, UTC+05:30) // Channels Open</text>`,
+              `  </g>`,
+              `  <rect x="38" y="216" width="512" height="4" rx="2" fill="${t.grid}"/>`,
+              `  <rect x="38" y="216" width="110" height="4" rx="2" fill="${t.cyan}">`,
+              `    <animate attributeName="x" values="38;440;38" dur="6s" repeatCount="indefinite"/>`,
+              `  </rect>`,
+              `  <text x="588" y="70" fill="${t.magenta}" font-family="${MONO}" font-size="11" font-weight="700" letter-spacing="1.3">LOADED KERNEL &amp; ML MODULES [09 ACTIVE]</text>`,
+              chips,
+              `  <rect x="22" y="244" width="1156" height="32" rx="4" fill="${t.panel2}" stroke="${t.border}" stroke-width="1"/>`,
+              `  <text x="38" y="264" fill="${t.acid}" font-family="${MONO}" font-size="11.5" font-weight="700">LAST_COMMIT:</text>`,
+              `  <text x="134" y="264" fill="${t.text}" font-family="${MONO}" font-size="11.5">${esc(meta.lastCommit)}</text>`,
+              `  <text x="588" y="264" fill="${t.muted}" font-family="${MONO}" font-size="11.5">|</text>`,
+              `  <text x="608" y="264" fill="${t.cyan}" font-family="${MONO}" font-size="11.5" font-weight="700">LOCAL_TIME:</text>`,
+              `  <text x="698" y="264" fill="${t.text}" font-family="${MONO}" font-size="11.5">${esc(meta.localTime)}</text>`,
+              `  <text x="916" y="264" fill="${t.muted}" font-family="${MONO}" font-size="11.5">|</text>`,
+              `  <text x="936" y="264" fill="${t.muted}" font-family="${MONO}" font-size="11">SYNC: 6H ACTION</text>`,
+              `  <rect x="1152" y="253" width="8" height="14" fill="${t.acidBright}">`,
+              `    <animate attributeName="opacity" values="1;0;1" dur="0.95s" repeatCount="indefinite"/>`,
+              `  </rect>`,
+              `</svg>`,
+              '',
+            ].join('\n');
           }
 
           (async () => {
